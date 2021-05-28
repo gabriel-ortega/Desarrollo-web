@@ -1,0 +1,73 @@
+<html><head>
+    <style>
+        .grid-container {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 800px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "main";
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 200px 50px 500px 50px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "area1"
+    "espacio1"
+    "area2"
+    "espacio2";
+  grid-area: main;
+}
+
+.area1 {
+  display: grid;
+  grid-template-columns: 200px 800px;
+  grid-template-rows: 200px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Logo Banner";
+  grid-area: area1;
+}
+
+.Logo { grid-area: Logo;background-color:DodgerBlue; }
+
+.Banner { grid-area: Banner;background-color:green; }
+
+.espacio1 { grid-area: espacio1;background-color:grey; }
+
+.area2 {
+  display: grid;
+  grid-template-columns: 700px 300px;
+  grid-template-rows: 500px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Article aside";
+  grid-area: area2;
+}
+
+.Article { grid-area: Article;background-color:brown; }
+
+.aside { grid-area: aside;background-color:orange; }
+
+.espacio2 { grid-area: espacio2;background-color:grey; }
+
+    </style>
+    <body>
+        <div class="grid-container">
+            <div class="main">
+              <div class="area1">
+                <div class="Logo"></div>
+                <div class="Banner"></div>
+              </div>
+              <div class="espacio1"></div>
+              <div class="area2">
+                <div class="Article"></div>
+                <div class="aside"></div>
+              </div>
+              <div class="espacio2"></div>
+            </div>
+          </div>
+    </body>

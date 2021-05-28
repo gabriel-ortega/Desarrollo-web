@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+  display: grid;
+  grid-template-columns: 1000px;
+  grid-template-rows: 950px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "area";
+}
+
+.area {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 300px 500px 50px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Nav"
+    "header"
+    "main"
+    "footer";
+  grid-area: area;
+}
+
+.Nav {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "box1 box2 box3 box4 box5";
+  grid-area: Nav;
+}
+
+.box1 { grid-area: box1; }
+
+.box2 { grid-area: box2; }
+
+.box3 { grid-area: box3; }
+
+.box4 { grid-area: box4; }
+
+.box5 { grid-area: box5; }
+
+.header {
+  display: grid;
+  grid-template-columns: 800px 200px;
+  grid-template-rows: 300px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "headerbanner headerside";
+  grid-area: header;
+}
+
+.headerbanner { grid-area: headerbanner; }
+
+.headerside {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 100px 100px 100px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo"
+    "login"
+    "form";
+  grid-area: headerside;
+}
+
+.logo { grid-area: logo; }
+
+.login { grid-area: login; }
+
+.form { grid-area: form; }
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 500px 300px;
+  grid-template-rows: 500px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "aside-left article aside-right";
+  grid-area: main;
+}
+
+.aside-left { grid-area: aside-left; }
+
+.article { grid-area: article; }
+
+.aside-right { grid-area: aside-right; }
+
+.footer { grid-area: footer; }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="area">
+              <div class="Nav">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box4"></div>
+                <div class="box5"></div>
+              </div>
+              <div class="header">
+                <div class="headerbanner"></div>
+                <div class="headerside">
+                  <div class="logo"></div>
+                  <div class="login"></div>
+                  <div class="form"></div>
+                </div>
+              </div>
+              <div class="main">
+                <div class="aside-left"></div>
+                <div class="article"></div>
+                <div class="aside-right"></div>
+              </div>
+              <div class="footer"></div>
+            </div>
+          </div>
+    </body>
+</html>
